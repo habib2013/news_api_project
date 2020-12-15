@@ -16,7 +16,7 @@ class NewsRepository {
       var params = {
         "apiKey":  apiKey,
         "language": "en",
-        "country": "ng"
+        "country": "us"
       };
       try{
         Response response = await _dio.get(getSourceUrl,queryParameters: params);
