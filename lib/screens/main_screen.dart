@@ -2,6 +2,8 @@ import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:news_api_project/bloc/bottom_navbar_bloc.dart';
 import 'package:news_api_project/screens/tabs/home_screen.dart';
+import 'package:news_api_project/screens/tabs/search_screen.dart';
+import 'package:news_api_project/screens/tabs/source_screen.dart';
 import 'package:news_api_project/style/theme.dart' as Style;
 
 
@@ -42,9 +44,9 @@ class _MainScreenState extends State<MainScreen> {
               case NavBarItem.HOME:
                 return HomeScreen();
               case NavBarItem.SOURCES:
-                  return TestScreen();
+                  return SourceScreen();
               case NavBarItem.SEARCH:
-                return TestScreen();
+                return SearchScreen();
 
             }
         },

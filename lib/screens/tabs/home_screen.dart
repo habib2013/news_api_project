@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:news_api_project/widgets/headline_slider.dart';
+import 'package:news_api_project/widgets/hot_news.dart';
 import 'package:news_api_project/widgets/top_channels.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -33,6 +34,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
         ),),
       ),
+     HotNews(),
     ],
     );
   }

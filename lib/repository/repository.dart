@@ -32,7 +32,7 @@ class NewsRepository {
     Future<ArticleResponse> getTopHeadlines() async {
       var params = {
         "apiKey":  apiKey,
-        "country": "ng"
+        "country": "us"
       };
       
       try {

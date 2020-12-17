@@ -5,6 +5,7 @@ import 'package:news_api_project/elements/error_element.dart';
 import 'package:news_api_project/elements/loader_element.dart';
 import 'package:news_api_project/model/source.dart';
 import 'package:news_api_project/model/source_response.dart';
+import 'package:news_api_project/screens/source_detail.dart';
 
 class TopChannels extends StatefulWidget {
   @override
@@ -48,7 +49,7 @@ class _TopChannelsState extends State<TopChannels> {
       );
     } else {
       return Container(
-        height: 115,
+        height: 90,
         child: ListView.builder(
             scrollDirection: Axis.horizontal,
             itemCount: sources.length,
@@ -57,7 +58,9 @@ class _TopChannelsState extends State<TopChannels> {
                 padding: EdgeInsets.only(top: 10.0),
                 width: 80.0,
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => SourceDetail(source: sources[index],)));
+                  },
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
@@ -75,11 +78,10 @@ class _TopChannelsState extends State<TopChannels> {
                                     spreadRadius: 1.0,
                                     offset: Offset(1.0, 1.0))
                               ],
-                              image: DecorationImage(
-                                  fit: BoxFit.cover,
-                                  image: AssetImage(
-                                      "assets/${sources[index].id}.jpg"))),
-                        ),
+                            image: new DecorationImage(
+                                fit: BoxFit.cover,
+                                image: AssetImage("assets/logos/${sources[index].id}.png")),
+                          )),
                       ),
                       SizedBox(
                         height: 10.0,
@@ -98,7 +100,7 @@ class _TopChannelsState extends State<TopChannels> {
                       SizedBox(
                         height: 3.0,
                       ),
-                      Text(sources[index].name)
+                      // Text(sources[index].name)
                     ],
                   ),
                 ),
