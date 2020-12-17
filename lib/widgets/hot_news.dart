@@ -129,16 +129,16 @@ class _HotNewsState extends State<HotNews> {
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                              Text(
-                              articles[index].source.name,
-                                style: TextStyle(color: Style.Colors.mainColor),
-                              ),
-                                  Text(
-                                    timeUntil(DateTime.parse(articles[index].date)),
-                                    style: TextStyle(
-                                        color: Colors.black54,
-                                        fontSize: 9.0),
-                                  ),
+                              // Text(
+                              // articles[index].source.name,
+                              //   style: TextStyle(color: Style.Colors.mainColor),
+                              // ),
+                              //     Text(
+                              //       timeUntil(DateTime.parse(articles[index].date)),
+                              //       style: TextStyle(
+                              //           color: Colors.black54,
+                              //           fontSize: 9.0),
+                              //     ),
                                 ],
                               ),
                             )
