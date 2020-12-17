@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Thu Dec 17 2020 08:25:40 GMT+0100 (West Africa Standard Time)
+------------------------------------------------------
+
+Modified files:
+* .gitignore
+* android/app/build.gradle
+* android/app/src/main/AndroidManifest.xml
+* lib/widgets/hot_news.dart
+
+
+Created files:
+* .autogit/autogit.json
+
+
+Deleted files:
+
+
+Renamed files:
